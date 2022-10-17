@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Belanja</title>
+</head>
+<body style="background-color: silver; margin-left: 2cm;">
+    <center>
+        <div class="menu" style="background-color:  white; border: 2px solid; height: 45px; padding: 15px 5px 0px 16px; margin: 20px 15px 5px; width: 35cm; float: left;">
+            <table>
+                <tr style="font-size: 20px;">
+                    <td>Home</td>
+                    <td style="width: 100px; padding-left: 100x">|</td>
+                    <td>Generate Link</td>
+                    <td style="width: 120px; padding-left: 80px">|</td>
+                    <td>Transaction History</td>
+                    <td style="width: 140px; padding-left: 80px">|</td>
+                    <td>Policy</td>
+                    <td style="width: 130px; padding-left: 80px">|</td>
+                    <td>Logout</td>
+                </tr>
+            </table>
+        </div>
+    </center>
+    <br/>
+    <br/>
+    <center>
+        <div>
+            <form method="POST" action="hasil-form.html">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="upload picture"><b>Upload Picture</b></label>
+                        </td>
+                        <td>:</td>
+                        <td>
+                            <input type="file" name="photo" value="Upload Picture">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="title"><b>Title</b></label>
+                        </td>
+                        <td>:</td>
+                        <td>
+                            <input type="text" id="title" style="border: 2px solid">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="description"><b>Description</b></label>
+                        </td>
+                        <td>:</td>
+                        <td>
+                            <textarea name="description" id="description" cols="30" rows="10" style="border: 2px solid"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="pay to"><b>Account Number</b></label>
+                        </td>
+                        <td>:</td>
+                        <td>
+                            <input type="text" style="border: 2px solid"><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="pay to"><b>Bank</b></label>
+                        </td>
+                        <td>:</td>
+                        <td>
+                            <input type="text" list="bank" name="list bank" style="width:280px" style="border: 2px solid" style="border: 2px solid">
+                            <datalist id="bank">
+                                <option value="BCA"></option>
+                                <option value="Mandiri"></option>
+                                <option value="BNI"></option>
+                                <option value="BRI"></option>
+                                <option value="CIMB Niaga"></option>
+                                <option value="Danamon"></option>
+                            </datalist>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="pay to"><b>Account Holder</b></label>
+                        </td>
+                        <td>:</td>
+                        <td>
+                            <input type="text" style="border: 2px solid">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="transaction"><b>Transaction</b></label>
+                        </td>
+                        <td>:</td>
+                        <td>
+                            <input type="number" min="1" max="5" style="border: 2px solid">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> </td>
+                        <td></td>
+                        <td style="font-size:10px; color: green;">
+                            <input type="checkbox" id="send-phone"><label for="send-phone">Send to Mobile Phone</label><br>
+                            <input type="checkbox" id="send-email"><label for="send-email">Send to Email</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="pay to"><b>Send to Mobile Phone</b></label>
+                        </td>
+                        <td>:</td>
+                        <td>
+                            <input type="number" style="border: 2px solid;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Send to Email</b></td>
+                        <td>:</td>
+                        <td>
+                            <input type="email" style="border: 2px solid;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> </td>
+                        <td> </td>
+                        <td>
+                            <input type="submit" value="Generate Nabr QuidLink" style="width: 150px; text-align: center; background-color: green; color: white; margin-top: 50px; width: 160px; height: 30px;">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </center>
+</body>
+</html>
